@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Admin Panel</h1>
+        <div class="mb-3">
+            <input type="text" id="plantName" class="form-control mb-2" placeholder="Plant Name">
+            <input type="number" id="plantPrice" class="form-control mb-2" placeholder="Price">
+            <textarea id="plantDescription" class="form-control mb-2" placeholder="Description"></textarea>
+            <input type="text" id="plantImage" class="form-control mb-2" placeholder="Image URL">
+            <button onclick="addPlant()" class="btn btn-primary">Add Plant</button>
+        </div>
+        <h2 class="mt-4">Manage Plants</h2>
+        <div id="admin-plant-list" class="row"></div>
+        <a href="home.html" class="btn btn-secondary mt-4">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
